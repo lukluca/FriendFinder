@@ -13,7 +13,8 @@
 		2F0F5991255DE0B400AA7CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F598F255DE0B400AA7CF9 /* Main.storyboard */; };
 		2F0F5993255DE0B500AA7CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F5992255DE0B500AA7CF9 /* Assets.xcassets */; };
 		2F0F5996255DE0B500AA7CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F5994255DE0B500AA7CF9 /* LaunchScreen.storyboard */; };
-		D9F31352E05AF7DC45C416A4 /* MainStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F310FF68C0A635BE3C559D /* MainStoryboardTests.swift */; };
+		2FDB50F22560A34300D636BC /* XCTestCase+Downgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDB50F12560A34300D636BC /* XCTestCase+Downgrade.swift */; };
+		D9F319BB7DCE7E906A87CEC2 /* MainStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F317E2AAA115788CECCEF7 /* MainStoryboardTests.swift */; };
 		D9F31CBE280E50662A05E238 /* FriendFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F31C14C6FD68F0360FD075 /* FriendFinderUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,9 +44,10 @@
 		2F0F5992255DE0B500AA7CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F0F5995255DE0B500AA7CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F0F5997255DE0B500AA7CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F0F599C255DE0B500AA7CF9 /* FriendFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F0F59A7255DE0B500AA7CF9 /* FriendFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9F310FF68C0A635BE3C559D /* MainStoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStoryboardTests.swift; sourceTree = "<group>"; };
+		2F0F599C255DE0B500AA7CF9 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0F59A7255DE0B500AA7CF9 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FDB50F12560A34300D636BC /* XCTestCase+Downgrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Downgrade.swift"; sourceTree = "<group>"; };
+		D9F317E2AAA115788CECCEF7 /* MainStoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStoryboardTests.swift; sourceTree = "<group>"; };
 		D9F3193D81D8A54A2FB29E20 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		D9F31A5FEF2D4420FFFF101B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		D9F31C14C6FD68F0360FD075 /* FriendFinderUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendFinderUITests.swift; sourceTree = "<group>"; };
@@ -89,8 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				2F0F5986255DE0B400AA7CF9 /* FriendFinder.app */,
-				2F0F599C255DE0B500AA7CF9 /* FriendFinderTests.xctest */,
-				2F0F59A7255DE0B500AA7CF9 /* FriendFinderUITests.xctest */,
+				2F0F599C255DE0B500AA7CF9 /* UnitTests.xctest */,
+				2F0F59A7255DE0B500AA7CF9 /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				D9F3193D81D8A54A2FB29E20 /* Info.plist */,
+				D9F317E2AAA115788CECCEF7 /* MainStoryboardTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -139,7 +142,7 @@
 		D9F31ED45EEE261F11D22B44 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
-				D9F310FF68C0A635BE3C559D /* MainStoryboardTests.swift */,
+				2FDB50F12560A34300D636BC /* XCTestCase+Downgrade.swift */,
 			);
 			path = Testing;
 			sourceTree = "<group>";
@@ -164,9 +167,9 @@
 			productReference = 2F0F5986255DE0B400AA7CF9 /* FriendFinder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F0F599B255DE0B500AA7CF9 /* FriendFinderTests */ = {
+		2F0F599B255DE0B500AA7CF9 /* UnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F0F59B3255DE0B500AA7CF9 /* Build configuration list for PBXNativeTarget "FriendFinderTests" */;
+			buildConfigurationList = 2F0F59B3255DE0B500AA7CF9 /* Build configuration list for PBXNativeTarget "UnitTests" */;
 			buildPhases = (
 				2F0F5998255DE0B500AA7CF9 /* Sources */,
 				2F0F5999255DE0B500AA7CF9 /* Frameworks */,
@@ -177,14 +180,14 @@
 			dependencies = (
 				2F0F599E255DE0B500AA7CF9 /* PBXTargetDependency */,
 			);
-			name = FriendFinderTests;
+			name = UnitTests;
 			productName = FriendFinderTests;
-			productReference = 2F0F599C255DE0B500AA7CF9 /* FriendFinderTests.xctest */;
+			productReference = 2F0F599C255DE0B500AA7CF9 /* UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2F0F59A6255DE0B500AA7CF9 /* FriendFinderUITests */ = {
+		2F0F59A6255DE0B500AA7CF9 /* UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F0F59B6255DE0B500AA7CF9 /* Build configuration list for PBXNativeTarget "FriendFinderUITests" */;
+			buildConfigurationList = 2F0F59B6255DE0B500AA7CF9 /* Build configuration list for PBXNativeTarget "UITests" */;
 			buildPhases = (
 				2F0F59A3255DE0B500AA7CF9 /* Sources */,
 				2F0F59A4255DE0B500AA7CF9 /* Frameworks */,
@@ -195,9 +198,9 @@
 			dependencies = (
 				2F0F59A9255DE0B500AA7CF9 /* PBXTargetDependency */,
 			);
-			name = FriendFinderUITests;
+			name = UITests;
 			productName = FriendFinderUITests;
-			productReference = 2F0F59A7255DE0B500AA7CF9 /* FriendFinderUITests.xctest */;
+			productReference = 2F0F59A7255DE0B500AA7CF9 /* UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -236,8 +239,8 @@
 			projectRoot = "";
 			targets = (
 				2F0F5985255DE0B400AA7CF9 /* FriendFinder */,
-				2F0F599B255DE0B500AA7CF9 /* FriendFinderTests */,
-				2F0F59A6255DE0B500AA7CF9 /* FriendFinderUITests */,
+				2F0F599B255DE0B500AA7CF9 /* UnitTests */,
+				2F0F59A6255DE0B500AA7CF9 /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9F31352E05AF7DC45C416A4 /* MainStoryboardTests.swift in Sources */,
+				D9F319BB7DCE7E906A87CEC2 /* MainStoryboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FDB50F22560A34300D636BC /* XCTestCase+Downgrade.swift in Sources */,
 				D9F31CBE280E50662A05E238 /* FriendFinderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +493,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FriendFinderTests/Info.plist;
+				INFOPLIST_FILE = FriendFinderTests/UnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,7 +514,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FriendFinderTests/Info.plist;
+				INFOPLIST_FILE = FriendFinderTests/UnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,7 +534,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FriendFinderUITests/Info.plist;
+				INFOPLIST_FILE = FriendFinderTests/UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,7 +553,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FriendFinderUITests/Info.plist;
+				INFOPLIST_FILE = FriendFinderTests/UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F0F59B3255DE0B500AA7CF9 /* Build configuration list for PBXNativeTarget "FriendFinderTests" */ = {
+		2F0F59B3255DE0B500AA7CF9 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F0F59B4255DE0B500AA7CF9 /* Debug */,
@@ -593,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F0F59B6255DE0B500AA7CF9 /* Build configuration list for PBXNativeTarget "FriendFinderUITests" */ = {
+		2F0F59B6255DE0B500AA7CF9 /* Build configuration list for PBXNativeTarget "UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F0F59B7255DE0B500AA7CF9 /* Debug */,

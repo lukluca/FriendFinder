@@ -15,11 +15,3 @@ class MainStoryboardTests: XCTestCase {
         let _: FriendsTableViewController = cast(navigation.viewControllers.first)
     }
 }
-
-extension XCTestCase {
-    func cast<T, U>(_ value: T, file: StaticString = #file, line: UInt = #line) -> U {
-        let casted = value as? U
-        XCTAssertNotNil(casted, file: file, line: line)
-        return casted!
-    }
-}
