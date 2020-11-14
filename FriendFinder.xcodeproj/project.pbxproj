@@ -13,8 +13,8 @@
 		2F0F5991255DE0B400AA7CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F598F255DE0B400AA7CF9 /* Main.storyboard */; };
 		2F0F5993255DE0B500AA7CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F5992255DE0B500AA7CF9 /* Assets.xcassets */; };
 		2F0F5996255DE0B500AA7CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0F5994255DE0B500AA7CF9 /* LaunchScreen.storyboard */; };
-		2F0F59A1255DE0B500AA7CF9 /* MainStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F59A0255DE0B500AA7CF9 /* MainStoryboardTests.swift */; };
-		2F0F59AC255DE0B500AA7CF9 /* FriendFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F59AB255DE0B500AA7CF9 /* FriendFinderUITests.swift */; };
+		D9F31352E05AF7DC45C416A4 /* MainStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F310FF68C0A635BE3C559D /* MainStoryboardTests.swift */; };
+		D9F31CBE280E50662A05E238 /* FriendFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F31C14C6FD68F0360FD075 /* FriendFinderUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +44,11 @@
 		2F0F5995255DE0B500AA7CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F0F5997255DE0B500AA7CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F0F599C255DE0B500AA7CF9 /* FriendFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F0F59A0255DE0B500AA7CF9 /* MainStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryboardTests.swift; sourceTree = "<group>"; };
-		2F0F59A2255DE0B500AA7CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F0F59A7255DE0B500AA7CF9 /* FriendFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F0F59AB255DE0B500AA7CF9 /* FriendFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFinderUITests.swift; sourceTree = "<group>"; };
-		2F0F59AD255DE0B500AA7CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F310FF68C0A635BE3C559D /* MainStoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStoryboardTests.swift; sourceTree = "<group>"; };
+		D9F3193D81D8A54A2FB29E20 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		D9F31A5FEF2D4420FFFF101B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		D9F31C14C6FD68F0360FD075 /* FriendFinderUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendFinderUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,6 @@
 			children = (
 				2F0F5988255DE0B400AA7CF9 /* FriendFinder */,
 				2F0F599F255DE0B500AA7CF9 /* FriendFinderTests */,
-				2F0F59AA255DE0B500AA7CF9 /* FriendFinderUITests */,
 				2F0F5987255DE0B400AA7CF9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,19 +112,36 @@
 		2F0F599F255DE0B500AA7CF9 /* FriendFinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F0F59A0255DE0B500AA7CF9 /* MainStoryboardTests.swift */,
-				2F0F59A2255DE0B500AA7CF9 /* Info.plist */,
+				D9F31CE23B53EC30A250AF60 /* UnitTests */,
+				D9F312743BD94905EEC8E405 /* UITests */,
+				D9F31ED45EEE261F11D22B44 /* Testing */,
 			);
 			path = FriendFinderTests;
 			sourceTree = "<group>";
 		};
-		2F0F59AA255DE0B500AA7CF9 /* FriendFinderUITests */ = {
+		D9F312743BD94905EEC8E405 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				2F0F59AB255DE0B500AA7CF9 /* FriendFinderUITests.swift */,
-				2F0F59AD255DE0B500AA7CF9 /* Info.plist */,
+				D9F31C14C6FD68F0360FD075 /* FriendFinderUITests.swift */,
+				D9F31A5FEF2D4420FFFF101B /* Info.plist */,
 			);
-			path = FriendFinderUITests;
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		D9F31CE23B53EC30A250AF60 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9F3193D81D8A54A2FB29E20 /* Info.plist */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		D9F31ED45EEE261F11D22B44 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				D9F310FF68C0A635BE3C559D /* MainStoryboardTests.swift */,
+			);
+			path = Testing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0F59A1255DE0B500AA7CF9 /* MainStoryboardTests.swift in Sources */,
+				D9F31352E05AF7DC45C416A4 /* MainStoryboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0F59AC255DE0B500AA7CF9 /* FriendFinderUITests.swift in Sources */,
+				D9F31CBE280E50662A05E238 /* FriendFinderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
