@@ -10,8 +10,16 @@ import XCTest
 
 class MainStoryboardTests: XCTestCase {
 
-    func testHasFriendsTableViewControllerAsInitialViewController() {
-        let initial = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController() as? FriendsTableViewController
-        XCTAssertNotNil(initial)
+    func testHasUINavigationControllerAsInitialViewControllerWithFriendsTableViewControllerAsFirstViewController() {
+        let navigation: UINavigationController = cast(UIStoryboard(name: "Main", bundle: Bundle.main).instantiateInitialViewController())
+        let _: FriendsTableViewController = cast(navigation.viewControllers.first)
+    }
+}
+
+extension XCTestCase {
+    func cast<T, U>(_ value: T, file: StaticString = #file, line: UInt = #line) -> U {
+        let casted = value as? U
+        XCTAssertNotNil(casted, file: file, line: line)
+        return casted!
     }
 }
