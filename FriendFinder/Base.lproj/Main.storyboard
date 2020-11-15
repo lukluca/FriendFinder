@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="cwD-sE-CV6" detailTextLabel="qEh-1H-hsa" style="IBUITableViewCellStyleSubtitle" id="5Jm-gc-g1k">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="friendCellIdentifier" textLabel="cwD-sE-CV6" detailTextLabel="qEh-1H-hsa" style="IBUITableViewCellStyleSubtitle" id="5Jm-gc-g1k" userLabel="Cell">
                                 <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Jm-gc-g1k" id="RNL-pQ-qri">
@@ -41,6 +41,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Wa7-LZ-GYN" kind="show" id="eQ0-T0-nJd"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -63,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fa8-el-fZv">
-                                <rect key="frame" x="80.5" y="74" width="253" height="162.5"/>
+                                <rect key="frame" x="80.5" y="118" width="253" height="162.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa7-ii-WaS">
                                         <rect key="frame" x="0.0" y="0.0" width="253" height="20.5"/>
@@ -158,6 +161,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3m-ub-fbI">
                                                 <rect key="frame" x="182" y="0.0" width="71" height="30"/>
                                                 <state key="normal" title="Open map"/>
+                                                <connections>
+                                                    <segue destination="0IT-JV-rbd" kind="show" id="rBs-sg-5hP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -173,6 +179,7 @@
                             <constraint firstItem="fa8-el-fZv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yFn-4u-QSW" secondAttribute="leading" constant="30" id="dNI-Pl-QVX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EBr-hj-6wN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UdG-ap-4V8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,7 +194,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iZc-IN-qhn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s1R-rM-anS"/>
@@ -199,6 +206,7 @@
                             <constraint firstItem="iZc-IN-qhn" firstAttribute="top" secondItem="s1R-rM-anS" secondAttribute="top" id="Tgk-jI-HKU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gw3-pm-Jpk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzq-ja-ZvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
