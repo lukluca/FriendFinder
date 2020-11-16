@@ -1,6 +1,6 @@
 //
 //  XCTestCase+Downgrade.swift
-//  UITests
+//  Testing
 //
 //  Created by Luca Tagliabue on 15/11/20.
 //

@@ -1,6 +1,6 @@
 //
-//  FriendFinderTests.swift
-//  FriendFinderTests
+//  MainStoryboardTests.swift
+//  FriendFinder UnitTests
 //
 //  Created by Luca Tagliabue on 12/11/2020.
 //
